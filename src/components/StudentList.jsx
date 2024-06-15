@@ -16,6 +16,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ManagementDashboard from './ManagementDashboard';
 
 const mockStudentsData = [
   {
@@ -49,6 +50,7 @@ const StudentList = () => {
 
   return (
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>All Students</h2>
       <table className="table table-bordered">
         <thead>

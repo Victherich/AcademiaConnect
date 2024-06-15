@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaDropbox, FaEdit, FaSave } from 'react-icons/fa';
+import ManagementDashboard from './ManagementDashboard';
 
 // Sample Data
 const timetableData = [
@@ -88,6 +89,7 @@ const Timetable = ({ classData, onSave }) => {
 
   return (
     <div style={{ marginBottom: '20px', }} className='Style1'>
+      
       <h3 onClick={toggleCollapse} style={{ cursor: 'pointer',backgroundColor:"lightgray" }}>
         {classData.class}
       </h3>
@@ -145,6 +147,7 @@ const SchemeOfWorkTimetable = () => {
 
   return (
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>Scheme of Work and Timetable</h2>
       {data.map(classData => (
         <Timetable key={classData.class} classData={classData} onSave={handleSave} />

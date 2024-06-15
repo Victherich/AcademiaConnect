@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Swal from "sweetalert2"
+import ManagementDashboard from './ManagementDashboard';
 
 const CreateStudent = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,7 @@ const CreateStudent = () => {
 
   return (
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>Create Student</h2>
       <form className='Style2' onSubmit={handleSubmit}>
         {/* Form fields for creating a student */}

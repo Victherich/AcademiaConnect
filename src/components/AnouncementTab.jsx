@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../CSS/Announcement.css"
+import ManagementDashboard from './ManagementDashboard';
 
 // Sample Announcement Data
 const initialAnnouncements = [
@@ -34,7 +35,9 @@ const Announcements = () => {
 //   },[])
 
   return (
+
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>Announcements</h2>
       <div className="form-group">
         <input

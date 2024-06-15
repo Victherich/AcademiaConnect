@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Img1 from "../Images/Img1.jpg"
 import BackButton from './BackButton';
+import ManagementDashboard from './ManagementDashboard';
 
 const StudentDetails = () => {
   const { id } = useParams();
@@ -104,6 +105,7 @@ const [isChecked,setIshecked]=useState(false)
 
   return (
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>Student {id} Details</h2>
       <form className='Style2' onSubmit={handleSubmit}>
         {/* Form fields for creating a student */}

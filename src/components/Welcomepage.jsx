@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const WelcomePage = () => (
   <div className="text-center">
     <h1>Welcome to the School Management System</h1>
-    <Link to="/dashboard" className="btn btn-primary mt-3">Go to Dashboard</Link>
+    <Link to="/students" className="btn btn-primary mt-3">Go to Dashboard</Link>
   </div>
 );
 

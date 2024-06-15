@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       {/* <div className="container"> */}
-        <ManagementDashboard/>
+        
         <Routes>
           <Route path="/" element={<WelcomePage />} />
           <Route path="/dashboard" element={<ManagementDashboard />} />

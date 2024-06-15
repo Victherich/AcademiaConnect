@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import ManagementDashboard from './ManagementDashboard';
 
 const studentsData = [
   {
@@ -82,6 +83,7 @@ const StudentByClasses = () => {
 
   return (
     <div className='Style1'>
+      <ManagementDashboard/>
       <h2>Students by Classes</h2>
       {classes.map(className => (
         <div key={className}>
