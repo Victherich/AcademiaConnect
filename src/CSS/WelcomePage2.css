@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 255, 0.3);
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
 }
 .WelcomeWrap{
@@ -36,14 +37,14 @@
 }
 .Logo h1{
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     font-weight: 800;
     color: rgba(0, 0, 255, 0.575);  
     /* color: black; */
 }
 .Logo span{
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     font-weight: 800;
     color: goldenrod;
 }
@@ -69,9 +70,11 @@
 .Btn{
     height: 30px;
     width: 150px;
-    border: 2px solid #00224d;
+    border: 1px solid #00224d;
     border-radius: 10px;
     font-size: 12px;
+    color: blue;
+    font-weight: bold;
 }
 .btns{
     height: 30px;
@@ -85,10 +88,10 @@
 .Text h1{
     font-size: 25px;
     font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .Text p{
     font-size: 15px;
     font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
