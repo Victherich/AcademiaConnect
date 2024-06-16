@@ -1,0 +1,94 @@
+.WelcomePage{
+    height: 100vh;
+    width: 100%;
+    /* background-color:#00224d; */
+    background-color: rgba(0, 0, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WelcomeWrap{
+    height: 80%;
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contain{
+    height: 70%;
+    width: 80%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Logo{
+    height: 20%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo h1{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: rgba(0, 0, 255, 0.575);  
+    /* color: black; */
+}
+.Logo span{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: goldenrod;
+}
+.Text{
+    height: 30%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Buttons{
+    height: 25%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.Btn{
+    height: 30px;
+    width: 150px;
+    border: 2px solid #00224d;
+    border-radius: 10px;
+    font-size: 12px;
+}
+.btns{
+    height: 30px;
+    width: 150px;
+    /* background-color: #00224d; */
+    border: none;
+    border-radius: 10px;  
+    color: whitesmoke;
+    font-size: 15px;
+}
+.Text h1{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Text p{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,18 +1,4 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
 
-// const StudentList = () => (
-//   <div className='Style1'>
-//     <h2>All Students</h2>
-//     {/* This should be dynamically generated from your state or API */}
-//     <ul>
-//       <li><Link to="/students/1">Student 1</Link></li>
-//       <li><Link to="/students/2">Student 2</Link></li>
-//     </ul>
-//   </div>
-// );
-
-// export default StudentList;
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -20,22 +6,25 @@ import ManagementDashboard from './ManagementDashboard';
 
 const mockStudentsData = [
   {
-    id: 1,
+    id: 176485,
     fullName: 'John Doe',
-    class: '5th Grade',
-    guardianPhone: '123-456-7890'
+    class: '4th Grade',
+    guardianPhone: '123-456-7890',
+    pickUpId : "joh345649"
   },
   {
-    id: 2,
+    id: 264758,
     fullName: 'Jane Smith',
-    class: '6th Grade',
-    guardianPhone: '234-567-8901'
+    class: '5th Grade',
+    guardianPhone: '234-567-8901',
+    pickUpId : "jan167589"
   },
   {
-    id: 3,
+    id: 364785,
     fullName: 'Alice Johnson',
-    class: '7th Grade',
-    guardianPhone: '345-678-9012'
+    class: '6th Grade',
+    guardianPhone: '345-678-9012',
+    pickUpId : "ali968754"
   }
   // Add more mock data as needed
 ];
@@ -59,6 +48,7 @@ const StudentList = () => {
             <th>Class</th>
             <th>Guardian Phone</th>
             <th>Student ID</th>
+            <th>Pick-up ID</th>
           </tr>
         </thead>
         <tbody>
@@ -68,6 +58,7 @@ const StudentList = () => {
               <td>{student.class}</td>
               <td>{student.guardianPhone}</td>
               <td>{student.id}</td>
+              <td>{student.pickUpId}</td>
             </tr>
           ))}
         </tbody>
