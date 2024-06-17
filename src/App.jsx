@@ -15,14 +15,15 @@ import PrivateRoute from "./components/PrivateRoute"
 import PrivateRoute2 from './components/PrivateRoute2';
 import StudentDashboard from './components/StudentDashboard';
 import WelcomePage2 from './components/WelcomePage2';
+import HomePage from './components/LandingPage';
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* <Route path="/" element={<WelcomePage />} /> */}
-        <Route path="/" element={<WelcomePage2/>}/>
-     
+        <Route path="/welcome2" element={<WelcomePage2/>}/>
+        <Route path="/" element={<HomePage/>}/>
         <Route path="/create-student" element={<PrivateRoute element={<CreateStudent />} />} />
         <Route path="/students" element={<PrivateRoute element={<StudentList />} />} />
         <Route path="/students/:id" element={<PrivateRoute element={<StudentDetails />} />} />
