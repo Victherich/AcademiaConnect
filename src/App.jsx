@@ -17,12 +17,16 @@ import StudentDashboard from './components/StudentDashboard';
 import WelcomePage2 from './components/WelcomePage2';
 import HomePage from './components/LandingPage';
 import ContactUs from './components/ContactUs';
+import SchoolLogin from './components/SchoolLogin';
+import StudentLogin from './components/StudentLogin';
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* <Route path="/" element={<WelcomePage />} /> */}
+        <Route path="/studentlogin" element={<StudentLogin/>}/>
+        <Route path="/schoollogin" element={<SchoolLogin/>}/>
         <Route path="/welcome2" element={<WelcomePage2/>}/>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/create-student" element={<PrivateRoute element={<CreateStudent />} />} />
