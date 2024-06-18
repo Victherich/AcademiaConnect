@@ -16,6 +16,7 @@ import PrivateRoute2 from './components/PrivateRoute2';
 import StudentDashboard from './components/StudentDashboard';
 import WelcomePage2 from './components/WelcomePage2';
 import HomePage from './components/LandingPage';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/announcements" element={<PrivateRoute element={<AnnouncementTab />} />} />
         <Route path="/scheme-work" element={<PrivateRoute element={<SchemeWorkTab />} />} />
         <Route path="/studentdashboard" element={<PrivateRoute2 element={<StudentDashboard/>}/>}/>
+        <Route path="/contactus" element={<ContactUs/>}/>
       </Routes>
     </Router>
   );

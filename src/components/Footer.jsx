@@ -26,7 +26,7 @@ const Footer = () => {
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contactus">Contact</a></li>
             </ul>
             <div className="social-icons">
               <a href="#" className="icon-link"><i className="fab fa-facebook-f"></i></a>
