@@ -21,6 +21,7 @@ import SchoolLogin from './components/SchoolLogin';
 import StudentLogin from './components/StudentLogin';
 import BatchUploadStudents from './components/BatchUploadStudents';
 import SchoolFeesManagement from './components/SchoolFeesManagement';
+import TeacherDashboard from './components/TeacherDashboard';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs/>}/>
         <Route path="/batchuploadstudents" element={<BatchUploadStudents/>}/>
         <Route path='/schoolfeesmanagemenet' element={<SchoolFeesManagement/>}/>
+        <Route path="/teacherdashboard" element={<TeacherDashboard/>} />
       </Routes>
     </Router>
   );

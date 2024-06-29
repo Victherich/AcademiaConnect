@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #4CAF50;
+    color: white;
+    /* padding: 10px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.header-right {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 15px;
+}
+  
+.profile {
+    margin-right: 10px;
+}
+  
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  
+.notifications, .settings, .logout {
+    margin-left: 10px;
+    cursor: pointer;
+}
+  
+
+
+.emma {
+    width: 10%;
+    height: 20%;
+    background-color: red;
+}

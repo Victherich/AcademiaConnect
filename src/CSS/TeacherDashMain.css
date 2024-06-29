@@ -1,0 +1,61 @@
+.mainconts {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    /* background-color: red; */
+}
+
+.sidebars {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebars ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.sidebars ul li {
+    margin: 10px 0;
+}
+  
+.sidebars ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+  
+.sidebars ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.main-content {
+   width: 80%;
+   padding: 20px;
+}
+
+.main section {
+    margin-bottom: 20px;
+}
+  
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.quick-links ul li {
+    margin: 5px 0;
+}
+  
+.quick-links ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+  
+.quick-links ul li a:hover {
+    text-decoration: underline;
+}
+  
