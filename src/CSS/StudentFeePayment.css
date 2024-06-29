@@ -1,0 +1,51 @@
+/* src/pages/StudentFeePayment.css */
+.student-fee-payment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.student-fee-payment-title {
+    text-align: center;
+    color: #333;
+}
+
+.student-fee-payment-info {
+    font-size: 16px;
+    color: #666;
+}
+
+.student-fee-payment-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.student-fee-payment-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .student-fee-payment-container {
+        padding: 15px;
+    }
+
+    .student-fee-payment-info {
+        font-size: 14px;
+    }
+
+    .student-fee-payment-button {
+        font-size: 14px;
+    }
+}

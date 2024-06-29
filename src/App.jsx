@@ -19,6 +19,8 @@ import HomePage from './components/LandingPage';
 import ContactUs from './components/ContactUs';
 import SchoolLogin from './components/SchoolLogin';
 import StudentLogin from './components/StudentLogin';
+import BatchUploadStudents from './components/BatchUploadStudents';
+import SchoolFeesManagement from './components/SchoolFeesManagement';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/scheme-work" element={<PrivateRoute element={<SchemeWorkTab />} />} />
         <Route path="/studentdashboard" element={<PrivateRoute2 element={<StudentDashboard/>}/>}/>
         <Route path="/contactus" element={<ContactUs/>}/>
+        <Route path="/batchuploadstudents" element={<BatchUploadStudents/>}/>
+        <Route path='/schoolfeesmanagemenet' element={<SchoolFeesManagement/>}/>
       </Routes>
     </Router>
   );

@@ -5,6 +5,7 @@ import ClassTimetable from './ClassTimetable';
 import Complaints from './Complaints';
 import "../CSS/StudentDashboard.css"
 import { useNavigate } from 'react-router-dom';
+import StudentFeePayment from './StudentFeePayment';
 
 // Sample Data
 const sampleStudent = {
@@ -54,13 +55,15 @@ const StudentDashboard = () => {
         <span onClick={()=>setMenuSwitch(0)} className={menuSwitch===0?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"green"}}>Student Details</span>
         <span onClick={()=>setMenuSwitch(1)} className={menuSwitch===1?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"blue"}}>Timetable</span>
         <span onClick={()=>setMenuSwitch(2)} className={menuSwitch===2?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Anouncement</span>
-        <span onClick={()=>setMenuSwitch(3)} className={menuSwitch===3?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"red"}}>Send Complaint</span>    
+        <span onClick={()=>setMenuSwitch(3)} className={menuSwitch===3?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"red"}}>Send Complaint</span>
+        <span onClick={()=>setMenuSwitch(4)} className={menuSwitch===4?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>School Fees Payment</span>    
         <span onClick={()=>navigate("/")} className='StudentDashboardMenuP2'>Logout</span>
       </div>
       {menuSwitch===0&&<StudentDetails2 student={sampleStudent} />}
       {menuSwitch===2&&<Announcements announcements={sampleAnnouncements} />}
       {menuSwitch===1&&<ClassTimetable timetable={sampleTimetable} />}
       {menuSwitch===3&&<Complaints sendComplaint={sendComplaint} />}
+      {menuSwitch===4&&<StudentFeePayment/>}
     </div>
   );
 };

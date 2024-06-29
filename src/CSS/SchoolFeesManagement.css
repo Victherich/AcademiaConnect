@@ -1,0 +1,71 @@
+/* src/CSS/SchoolFeesManagement.css */
+.management-view-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.management-view-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.management-view-class-section {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.management-view-class-section h3{
+    background-color: lightgray;
+    text-align: center;
+}
+
+.management-view-class-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.management-view-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.management-view-table th,
+.management-view-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.management-view-table th {
+    background-color: #f2f2f2;
+}
+
+.management-view-table td {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .management-view-table th,
+    .management-view-table td {
+        padding: 8px;
+    }
+
+    .management-view-class-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .management-view-table th,
+    .management-view-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .management-view-class-title {
+        font-size: 18px;
+    }
+}
