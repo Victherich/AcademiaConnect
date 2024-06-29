@@ -1,0 +1,79 @@
+/* src/CSS/DailyAttendance.css */
+.attendance-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.attendance-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.attendance-table th,
+.attendance-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.attendance-table th {
+    background-color: #f2f2f2;
+}
+
+.attendance-table td {
+    background-color: #fff;
+}
+
+.attendance-submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.attendance-submit-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .attendance-table th,
+    .attendance-table td {
+        padding: 8px;
+    }
+
+    .attendance-title {
+        font-size: 20px;
+    }
+
+    .attendance-submit-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .attendance-table th,
+    .attendance-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .attendance-title {
+        font-size: 18px;
+    }
+
+    .attendance-submit-button {
+        font-size: 12px;
+    }
+}

@@ -6,6 +6,7 @@ import Complaints from './Complaints';
 import "../CSS/StudentDashboard.css"
 import { useNavigate } from 'react-router-dom';
 import StudentFeePayment from './StudentFeePayment';
+import StudentViewTeacherMessage from './StudentViewTeacherMessage';
 
 // Sample Data
 const sampleStudent = {
@@ -57,6 +58,7 @@ const StudentDashboard = () => {
         <span onClick={()=>setMenuSwitch(2)} className={menuSwitch===2?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Anouncement</span>
         <span onClick={()=>setMenuSwitch(3)} className={menuSwitch===3?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"red"}}>Send Complaint</span>
         <span onClick={()=>setMenuSwitch(4)} className={menuSwitch===4?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>School Fees Payment</span>    
+        <span onClick={()=>setMenuSwitch(5)} className={menuSwitch===5?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Class Teacher's Message</span> 
         <span onClick={()=>navigate("/")} className='StudentDashboardMenuP2'>Logout</span>
       </div>
       {menuSwitch===0&&<StudentDetails2 student={sampleStudent} />}
@@ -64,6 +66,8 @@ const StudentDashboard = () => {
       {menuSwitch===1&&<ClassTimetable timetable={sampleTimetable} />}
       {menuSwitch===3&&<Complaints sendComplaint={sendComplaint} />}
       {menuSwitch===4&&<StudentFeePayment/>}
+      {menuSwitch===5&&<StudentViewTeacherMessage/>}
+
     </div>
   );
 };

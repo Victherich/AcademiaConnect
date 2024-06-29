@@ -57,7 +57,7 @@ const feeStructure = {
 
     return (
         <div className="student-fee-payment-container">
-            <h2 className="student-fee-payment-title">Welcome, {student.name}</h2>
+            <h2 className="student-fee-payment-title">Hi, {student.name}</h2>
             <p className="student-fee-payment-info">Class: {student.class}</p>
             <p className="student-fee-payment-info">Email: {student.email}</p>
             <p className="student-fee-payment-info">Contact: {student.contact}</p>

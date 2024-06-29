@@ -1,0 +1,30 @@
+.student-dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.student-dashboard-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.student-dashboard-messages {
+    margin-top: 20px;
+}
+
+.student-dashboard-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.student-dashboard-message p {
+    margin: 5px 0;
+}

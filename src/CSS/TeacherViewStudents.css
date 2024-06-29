@@ -1,0 +1,55 @@
+/* src/CSS/TeacherView.css */
+.teacher-view-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.teacher-view-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.teacher-view-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teacher-view-table th,
+.teacher-view-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.teacher-view-table th {
+    background-color: #f2f2f2;
+}
+
+.teacher-view-table td {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .teacher-view-table th,
+    .teacher-view-table td {
+        padding: 8px;
+    }
+
+    .teacher-view-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-view-table th,
+    .teacher-view-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .teacher-view-title {
+        font-size: 18px;
+    }
+}

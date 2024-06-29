@@ -1,0 +1,60 @@
+/* src/CSS/AttendanceRecord.css */
+.attendance-records-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.attendance-records-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.date-range-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.date-range-picker label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.attendance-record {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.attendance-record-date {
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.attendance-record-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-record-table th,
+.attendance-record-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.attendance-record-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}

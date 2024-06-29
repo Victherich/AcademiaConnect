@@ -25,6 +25,9 @@ const WelcomePage2 = () => {
                     <button className='Btn' onClick={()=>navigate("/students")}>
                         School Admin
                     </button>
+                    <button className='Btn' onClick={()=>navigate("/teachersdashboard")}>
+                        Teacher
+                    </button>
 
                     <button className='Btn' onClick={()=>navigate("/")}>
                         Home

@@ -1,0 +1,20 @@
+.ScoreSheetTabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ScoreSheetTabsMenu{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ScoreSheetTabsMenuA{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+}

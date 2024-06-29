@@ -1,0 +1,38 @@
+/* src/CSS/EnterScores.css */
+.enter-scores-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.enter-scores-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.enter-scores-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.enter-scores-table th,
+.enter-scores-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.enter-scores-table th {
+    background-color: #f2f2f2;
+}
+
+.enter-scores-table input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
