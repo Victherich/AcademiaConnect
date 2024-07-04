@@ -7,7 +7,9 @@
 
 .teacher-view-title {
     text-align: center;
-    color: #333;
+    /* color: #333; */
+    color: rgba(0, 0, 255, 0.596);
+    font-weight: bold;
     margin-bottom: 20px;
 }
 

@@ -11,8 +11,7 @@ const AboutUs = () => {
           <h2>About Us</h2>
           <span>
             Welcome to our school management app, dedicated to revolutionizing
-            educational administration. At [Your School Management App Name],
-            we understand the challenges faced by educators, administrators,
+            educational administration. We understand the challenges faced by educators, administrators,
             and students alike. Our mission is to streamline school operations
             and enhance communication among stakeholders.
           </span>

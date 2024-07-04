@@ -146,12 +146,15 @@ const SchemeOfWorkTimetable = () => {
   };
 
   return (
-    <div className='Style1'>
+    <div>
       <ManagementDashboard/>
+    <div className='Style1'>
+      
       <h2>Scheme of Work and Timetable</h2>
       {data.map(classData => (
         <Timetable key={classData.class} classData={classData} onSave={handleSave} />
       ))}
+    </div>
     </div>
   );
 };

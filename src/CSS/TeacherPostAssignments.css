@@ -1,0 +1,100 @@
+.assignment-page {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .assignment-form {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .assignment-form h2 {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 255, 0.7);
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .assignment-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .assignment-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .assignment-form input,
+  .assignment-form textarea,
+  .assignment-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .assignment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .assignment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .assignment-list {
+    flex: 1;
+  }
+  
+  .assignment-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .assignment-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .assignment-list li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .assignment-list li div:first-child {
+    flex: 1;
+  }
+  
+  .assignment-list li div:last-child {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .assignment-list h3{
+    color: rgba(0, 0, 255, 0.527);
+    font-size: 1.5rem;
+  }
+
+  .assignment-list button{
+    padding: 5px 10px;
+    border-radius: 5px ;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.575);
+  }

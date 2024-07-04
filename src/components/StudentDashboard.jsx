@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import StudentDetails2 from './StudentDetails2';
 import Announcements from './Announcements';
 import ClassTimetable from './ClassTimetable';
@@ -7,11 +7,14 @@ import "../CSS/StudentDashboard.css"
 import { useNavigate } from 'react-router-dom';
 import StudentFeePayment from './StudentFeePayment';
 import StudentViewTeacherMessage from './StudentViewTeacherMessage';
+import StudentSeeScoreSheet from './StudentSeeScoreSheet';
+import StudentSeeAssignment from './StudentSeeAssignmnet';
+import { Context } from './Context';
 
 // Sample Data
 const sampleStudent = {
   id:748576,
-  fullName: "John Doe",
+  fullName: "Alice Johnson",
   dob: "2005-08-20",
   address: "123 Main St, Springfield",
   class: "5th Grade",
@@ -48,6 +51,7 @@ const StudentDashboard = () => {
 
   const [menuSwitch,setMenuSwitch]=useState(0)
   const navigate = useNavigate()
+  const {setStudent}=useContext(Context)
 
   return (
     <div className="StudentContainer">
@@ -57,9 +61,11 @@ const StudentDashboard = () => {
         <span onClick={()=>setMenuSwitch(1)} className={menuSwitch===1?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"blue"}}>Timetable</span>
         <span onClick={()=>setMenuSwitch(2)} className={menuSwitch===2?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Anouncement</span>
         <span onClick={()=>setMenuSwitch(3)} className={menuSwitch===3?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"red"}}>Send Complaint</span>
-        <span onClick={()=>setMenuSwitch(4)} className={menuSwitch===4?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>School Fees Payment</span>    
-        <span onClick={()=>setMenuSwitch(5)} className={menuSwitch===5?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Class Teacher's Message</span> 
-        <span onClick={()=>navigate("/")} className='StudentDashboardMenuP2'>Logout</span>
+        <span onClick={()=>setMenuSwitch(4)} className={menuSwitch===4?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"green"}}>School Fees Payment</span>    
+        <span onClick={()=>setMenuSwitch(5)} className={menuSwitch===5?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"blue"}}>Class Teacher's Message</span> 
+        <span onClick={()=>setMenuSwitch(7)} className={menuSwitch===7?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"orange"}}>Assignmnets</span>
+        <span onClick={()=>setMenuSwitch(6)} className={menuSwitch===6?'StudentDashboardMenuP1':'StudentDashboardMenuP2'} style={{color:"red"}}>Score sheet</span> 
+        <span onClick={()=>{navigate("/");setStudent(false)}} className='StudentDashboardMenuP2'>Logout</span>
       </div>
       {menuSwitch===0&&<StudentDetails2 student={sampleStudent} />}
       {menuSwitch===2&&<Announcements announcements={sampleAnnouncements} />}
@@ -67,6 +73,9 @@ const StudentDashboard = () => {
       {menuSwitch===3&&<Complaints sendComplaint={sendComplaint} />}
       {menuSwitch===4&&<StudentFeePayment/>}
       {menuSwitch===5&&<StudentViewTeacherMessage/>}
+      {menuSwitch===6&&<StudentSeeScoreSheet/>}
+      {menuSwitch===7&&<StudentSeeAssignment/>}
+      
 
     </div>
   );

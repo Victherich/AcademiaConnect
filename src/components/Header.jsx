@@ -2,8 +2,11 @@
 
 import React from 'react';
 import '../CSS/Header.css'; // Import your CSS file for styling
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate()
+  const location =useLocation()
   return (
     <header className="header">
       <div className="containerH">
@@ -13,9 +16,10 @@ const Header = () => {
             <span>ACADEMIA CONNECT</span>
           </div>
           <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#value">Value Proposition</a></li>
+          <li><a onClick={()=>navigate("/")} style={{cursor:"pointer"}}>Home</a></li>
+            {location.pathname==="/"&&<li><a href="#about">About Us</a></li>}
+            <li><a onClick={()=>navigate("/contactus")} style={{cursor:"pointer"}}>Contact Us</a></li>
+            {/* <li><a href="#value">Value Proposition</a></li> */}
             {/* Add more links as needed */}
           </ul>
         </nav>

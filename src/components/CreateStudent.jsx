@@ -83,8 +83,10 @@ const CreateStudent = () => {
   };
 
   return (
-    <div className="Style1">
+    <div>
       <ManagementDashboard />
+    <div className="Style1">
+      
       <h2>Create Student</h2>
       <form className="Style2" onSubmit={handleSubmit}>
         <div className="form-group">
@@ -171,6 +173,7 @@ const CreateStudent = () => {
         </div>
         <button type="submit" className="btn btn-primary">Create</button>
       </form>
+    </div>
     </div>
   );
 };

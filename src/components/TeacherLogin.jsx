@@ -4,9 +4,8 @@ import { Context } from './Context'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-
-const SchoolLogin = () => {
-    const {Admin,setAdmin}=useContext(Context)
+const TeacherLogin = () => {
+    const {student,setStudent,setTeacher}=useContext(Context)
     const [formData,setFormdata]=useState({email:"",password:""})
     const navigate=useNavigate()
 
@@ -17,8 +16,8 @@ const SchoolLogin = () => {
         try{
             const response = axios.post("",formData)
             console.log(response.data)
-            setAdmin(true)
-            navigate("/students")
+            setTeacher(true)
+            navigate("/teachersdashboard")
         }catch(error){
             console.error(error)
         }
@@ -27,7 +26,7 @@ const SchoolLogin = () => {
   return (
     <div className='maincont'>
         <div className='logincontainer'>
-          <h1>SCHOOL ADMIN LOGIN</h1>
+          <h1>TEACHER LOGIN</h1>
           <form onSubmit={handleSubmit}>
               <div className='form1'>
                   <label htmlFor="email">Email</label>
@@ -45,4 +44,4 @@ const SchoolLogin = () => {
   )
 }
 
-export default SchoolLogin
+export default TeacherLogin

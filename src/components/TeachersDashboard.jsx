@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import TeacherViewStudents from './TeacherViewStudents'
 import StudentsAttendance from './StudentsAttendance'
@@ -8,11 +8,14 @@ import AttendanceRecords from './AttendanceRecord'
 import TeacherMessage from './TeacherMessageToStudents'
 import TeacherViewAnnouncements from './TeacherSeeAnnouncement'
 import ScoreSheet from './ScoreSheet'
+import TeacherPostAssignments from './TeacherPostAssignments'
+import { Context } from './Context'
 
 
 const TeachersDashboard = () => {
     const navigate = useNavigate()
     const [switchPage,setSwitchPage]=useState(0)
+    const {setTeacher}=useContext(Context)
 
   return (
     <div style={{display:"flex"}}>
@@ -25,9 +28,9 @@ const TeachersDashboard = () => {
       <p onClick={()=>setSwitchPage(5)} className={switchPage===5?"MenuActive":"Menu"}>Students Score sheet</p>
       <p onClick={()=>setSwitchPage(10)} className={switchPage===10?"MenuActive":"Menu"}>Message Students</p>
       <p onClick={()=>setSwitchPage(11)} className={switchPage===11?"MenuActive":"Menu"}>Anouncements By Management</p>
-      <p onClick={()=>navigate("/")} className='Menu'>Logout</p>
+      <p onClick={()=>{navigate("/");setTeacher(false)}} className='Menu'>Logout</p>
     </div>
-    <div className='TeachersDashBoardBody'>
+    <div className='TeachersDashBoardBody' style={{marginTop:"50px"}}>
         {switchPage===0&&<TeacherInfo/>}
         {switchPage===1&&<TeacherViewStudents/>}
         {switchPage===2&&<StudentsAttendance/>}
@@ -35,6 +38,7 @@ const TeachersDashboard = () => {
         {switchPage===10&&<TeacherMessage/>}
         {switchPage===11&&<TeacherViewAnnouncements/>}
         {switchPage===5&&<ScoreSheet/>}
+        {switchPage===4&&<TeacherPostAssignments/>}
     </div>
     </div>
   )

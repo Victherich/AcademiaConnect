@@ -22,16 +22,22 @@ import StudentLogin from './components/StudentLogin';
 import BatchUploadStudents from './components/BatchUploadStudents';
 import SchoolFeesManagement from './components/SchoolFeesManagement';
 import TeachersDashboard from './components/TeachersDashboard';
+import CreateTeacherPage from './components/CreateTeacher';
+import PrivateRoute3 from './components/PrivateRoute3';
+import TeacherLogin from './components/TeacherLogin';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         {/* <Route path="/" element={<WelcomePage />} /> */}
         <Route path="/studentlogin" element={<StudentLogin/>}/>
         <Route path="/schoollogin" element={<SchoolLogin/>}/>
         <Route path="/welcome2" element={<WelcomePage2/>}/>
         <Route path="/" element={<HomePage/>}/>
+        <Route path="/teacherlogin" element={<TeacherLogin/>}/>
         <Route path="/create-student" element={<PrivateRoute element={<CreateStudent />} />} />
         <Route path="/students" element={<PrivateRoute element={<StudentList />} />} />
         <Route path="/students/:id" element={<PrivateRoute element={<StudentDetails />} />} />
@@ -41,9 +47,10 @@ function App() {
         <Route path="/scheme-work" element={<PrivateRoute element={<SchemeWorkTab />} />} />
         <Route path="/studentdashboard" element={<PrivateRoute2 element={<StudentDashboard/>}/>}/>
         <Route path="/contactus" element={<ContactUs/>}/>
-        <Route path="/batchuploadstudents" element={<BatchUploadStudents/>}/>
-        <Route path='/schoolfeesmanagemenet' element={<SchoolFeesManagement/>}/>
-        <Route path="/teachersdashboard" element={<TeachersDashboard/>}/>
+        <Route path="/batchuploadstudents" element={<PrivateRoute element={<BatchUploadStudents/>}/>}/>
+        <Route path='/schoolfeesmanagemenet' element={<PrivateRoute element={<SchoolFeesManagement/>}/>}/>
+        <Route path="/teachersdashboard" element={<PrivateRoute3 element={<TeachersDashboard/>}/>}/>
+        <Route path="/createteacher" element ={<PrivateRoute element={<CreateTeacherPage/>}/>}/>
       </Routes>
     </Router>
   );

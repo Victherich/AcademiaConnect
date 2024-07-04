@@ -30,15 +30,15 @@ const StudentLogin = () => {
           <form onSubmit={handleSubmit}>
               <div className='form1'>
                   <label htmlFor="email">Email</label>
-                  <input type="text" required value={formData.email} onChange={(e)=>setFormdata({...formData,email:e.target.value})}/>
+                  <input type="email" required value={formData.email} onChange={(e)=>setFormdata({...formData,email:e.target.value})}/>
               </div>
               <div className='form1'>
                   <label htmlFor="password">Password</label>
                   <input type="text" required value={formData.password} onChange={(e)=>setFormdata({...formData,password:e.target.value})}/>
               </div>
-              <button type="submit">Login</button>
+              <button type="submit" className='LoginButton'>Login</button>
           </form>
-          <p>Don't have an account? <a href="">sign_up</a></p>
+          <p style={{textAlign:"center",cursor:"pointer"}} onClick={()=>navigate("/")}>Go Home</p>
         </div>
     </div>
   )

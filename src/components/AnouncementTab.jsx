@@ -35,9 +35,10 @@ const Announcements = () => {
 //   },[])
 
   return (
-
-    <div className='Style1'>
+    <div>
       <ManagementDashboard/>
+    <div className='Style1'>
+      
       <h2>Announcements</h2>
       <div className="form-group">
         <input
@@ -70,6 +71,7 @@ const Announcements = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };

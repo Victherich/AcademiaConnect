@@ -1,20 +1,19 @@
 import React from 'react';
 import '../CSS/ValueProposition.css'; // Import your CSS file for styling
+import show1 from "../Images/show1.png"
+import show2 from "../Images/show2.png"
+import show3 from "../Images/show3.png"
 
 const ValueProposition = () => {
   return (
     <section id="value" className="value-proposition">
       <div className="containerP">
+      <h1>DashBoards</h1>
         <div className="value-content">
-          <h2>Our Value Proposition</h2>    
-          <p>Discover the benefits of using our school management app:</p>
-          <ul>
-            <li>Streamlined administrative tasks</li>
-            <li>Enhanced communication between stakeholders</li>
-            <li>Improved student and parent engagement</li>
-            <li>Efficient management of academic resources</li>
-          </ul>
-          {/* Add more value proposition points as needed */}
+          
+          <img src={show1} alt="show"/>
+          <img src={show2} alt="show"/>
+          <img src={show3} alt="show"/>
         </div>
       </div>
     </section>

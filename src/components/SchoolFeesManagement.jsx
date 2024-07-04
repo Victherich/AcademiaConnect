@@ -101,8 +101,10 @@ const SchoolFeesManagement = () => {
     }, {});
 
     return (
-        <div className="management-view-container">
+        <div>
             <ManagementDashboard />
+        <div className="management-view-container">
+            
             <h2 className="management-view-title">School Fees Management</h2>
             {Object.keys(groupedByClass).map(className => (
                 <div key={className} className="management-view-class-section">
@@ -137,6 +139,7 @@ const SchoolFeesManagement = () => {
                     )}
                 </div>
             ))}
+        </div>
         </div>
     );
 };

@@ -12,7 +12,7 @@ const StudentDetails = () => {
   const students = {
     id: 1,
     profileImg: Img1,
-    fullName: "John Doe",
+    fullName: "Alice Johnson",
     dob: "2008-05-14",
     address: "123 Main St, Springfield",
     class: "5th Grade",

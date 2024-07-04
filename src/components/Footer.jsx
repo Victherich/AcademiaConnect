@@ -2,8 +2,11 @@
 
 import React from 'react';
 import '../CSS/Footer.css'; // Import your CSS file for styling
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const location =useLocation()
+  const navigate = useNavigate()
   return (
     <footer className="footerF">
       <div className="containerF">
@@ -16,17 +19,17 @@ const Footer = () => {
             </span><br/><br/>
             <span>
               <strong>Contact Us:</strong>
-            </span>
-            <span>Email: info@yourschoolapp.com</span><br/>
-            <span>Phone: +1 234 567 890</span><br/>
-            <span>Address: 123 School St, Cityville, State, Zip</span>
+            </span><br/>
+            <span>Email: homehub95@gmail.com</span><br/>
+            <span>Phone: +234 706 348 0314</span><br/>
+            {/* <span>Address: 123 School St, Cityville, State, Zip</span> */}
           </div>
           <div className="footer-right">
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="/contactus">Contact</a></li>
+              <li><a onClick={()=>navigate("/")} style={{cursor:"pointer"}}>Home</a></li>
+              {location.pathname==="/"&&<li><a href="#about">About Us</a></li>}
+              {/* <li><a href="#">Services</a></li> */}
+              <li><a onClick={()=>navigate("/contactus")} style={{cursor:"pointer"}}>Contact</a></li>
             </ul>
             <div className="social-icons">
               <a href="#" className="icon-link"><i className="fab fa-facebook-f"></i></a>

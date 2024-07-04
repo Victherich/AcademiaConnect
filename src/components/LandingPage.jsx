@@ -8,14 +8,18 @@ import Services from './Serices';
 import ValueProposition from './ValueProposition';
 import Footer from './Footer';
 import "../CSS/Landingpage.css"
+import OurSolutions from './OurSolutions';
+import FeaturesPage from './Features';
+
 
 const HomePage = () => {
   return (
     <div>
       <Header />
       <Hero />
-      
-      <Services />
+      <OurSolutions/>
+      <FeaturesPage/>
+      {/* <Services /> */}
       <ValueProposition />
       <About />
       <Footer />

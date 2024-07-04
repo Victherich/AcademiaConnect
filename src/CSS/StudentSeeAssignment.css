@@ -1,0 +1,63 @@
+.student-assignment-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    
+  }
+
+  .student-assignment-page h1{
+    color: blue;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .assignment-list {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .assignment-list h2{
+    color: green;
+    font-size: 1.4rem;
+  }
+
+  .AssignmentContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .assignment-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .assignment-list li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignment-list li div {
+    width: 100%;
+  }
+  
+  .assignment-list h2 {
+    margin-bottom: 5px;
+  }
+  
+  .assignment-list p {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .student-assignment-page {
+      padding: 10px;
+    }
+  }
+  

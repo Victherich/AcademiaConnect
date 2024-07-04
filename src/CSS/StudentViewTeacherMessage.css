@@ -1,6 +1,6 @@
 .student-dashboard-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 30px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -9,7 +9,8 @@
 
 .student-dashboard-title {
     text-align: center;
-    color: #333;
+    /* color: #333; */
+    color: orangered;
     margin-bottom: 20px;
 }
 

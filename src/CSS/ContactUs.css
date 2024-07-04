@@ -1,326 +1,146 @@
-.ContactUsWrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* src/ContactForm.css */
+
+.ContactFormWrap{
+
+    padding: 100px 0px;
+    background-color: rgba(211, 211, 211, 0.1);
+    background-color: rgba(0, 0, 255, 0.1);
     width: 100%;
-    height: auto;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    /* background-color: rgb(230, 255, 230); */
-    /* margin-bottom: 10vh; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../Images/contactImg.jpeg");
+    background-size: cover;
+    position: relative;
 }
 
-.ContactUs{
-    display: flex;
-    width: 100%;
-    height: auto;
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
     padding: 20px;
-}
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url("../Images/contactImg.jpeg");
+    background-size: contain;
+  
+  }
 
-
-.ContactUsHeader{
+  .contact-form-container::before{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgba(0, 0, 255, 0.596);
-    /* color: rgba(0, 225, 0, 0.7); */
-    text-align: center;
-}
-
-.ContactUsHeader h1{
-    font-size: 3rem;
-}
-.ContactUsBody{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
- 
-}
-
-.ContactUsBodyLeft{
-    width: 50%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* padding: 20px; */
-}
-
-.ContactUsBodyLeft form{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
-.ContactUsBodyLeft form label{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* padding-left: 10%; */
-    margin: 10px;
-    
-}
-
-.InputLabelChild{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.ContactUsBodyLeft form label input{
-    width: 70%;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgba(0, 0, 255, 0.5);
-    padding-left: 2%;
-    /* margin: 10px; */
-}
-
-.ContactUsBodyLeft form label input:hover{
-    border: 2px solid rgba(0, 0, 255, 0.5);
-}
-
-.ContactUsBodyRight{
-    width: 50%;
     height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ContactUsBodyRight img{
-    width: 70%;
-    /* height: 100%; */
-    border-radius: 50%;
-}
-
-.CountryCityStateWrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8%;
-
-    gap: 5%;
-}
-
-.CountryCityStateWrap input{
-    width: 22%;
-    height: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 255, 0.5);
-    padding-left: 2%;
-}
-
-.CountryCityStateWrap input:hover{
-    border: 2px solid rgba(0, 0, 255, 0.5);
-}
-
-.TextAreaWrap{
-    width: 100%;
-    /* height: 100px; */
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding-left:10% ;
-}
-
-.TextAreaWrap textarea{
-    width: 80%;
-    height: 100px;
-    resize: none;
-    outline: none;
-    padding: 1%;
-    border:  1px solid rgba(0, 0, 255, 0.5);
-    border-radius: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-.TextAreaWrap textarea:hover{
-    border: 2px solid rgba(0, 0, 255, 0.5);
-}
-
-.SubmitButtonWrap{
-    display: flex;
-    /* flex-direction: column; */
-    width: 100%;
-    gap:50%;
-    /* height: 7%; */
-    padding-top: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background-color: red; */
-    
-
-}
-
-.SubmitButtonWrap button{
-    color: white;
-    font-weight: bold;
-    background-color: rgba(0, 0, 255, 0.541);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: 350ms;
-    font-size: 1rem;
-    padding: 15px;
-    /* width: 20%;
-    height: 70%; */
-}
-
-.SubmitButtonWrap button:hover{
-    transform: scale(1.1);
-}
-
-.SubmitButtonWrap button:active{
-    transform: scale(0.9);
-}
-
-.FormSubmitUiWrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    top:0;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
     left: 0;
-    z-index: 11;
-}
+    content: "";
+  }
 
-.FormSubmitUi{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;
-    padding: 5%;
+
+  .contact-form-container h2 {
     text-align: center;
-    font-size: 2rem;
-    background-color: rgb(230, 255, 230);
-    
-}
+    color: rgba(0, 0, 255, 0.5);
+    margin-bottom: 20px;
+    position: relative;
+  }
 
-.FormSubmitUi button{
-    color: white;
-    font-weight: bold;
+  
+  .form-group {
+    margin-bottom: 15px;
+    /* width: 600px; */
+    /* background-color: red; */
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 255);
+    position: relative;
+    /* font-weight: bold; */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .contact-form-container button {
+    width: 100%;
+    padding: 10px;
     background-color: rgba(0, 0, 255, 0.5);
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: 350ms;
-    font-size: 1.5rem;
-    padding: 20px;
-    margin: 20px;
-}
-
-.FormSubmitUi button:hover{
-    transform: scale(1.1);
-}
-
-.FormSubmitUi button:active{
-    transform: scale(0.9);
-}
-
-.BackButtonWrap{
-    display: flex;
-    width: 100%;
-    gap:50%;
-    padding-top: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.BackButtonWrap button{
+    border-radius: 4px;
     color: white;
-    font-weight: bold;
-    background-color: rgba(0, 0, 255, 0.555);
-    border: none;
-    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transform: scale(1);
-    transition: 350ms;
-    font-size: 1rem;
-    padding: 15px;
+    position: relative;
+  }
+  
+  .contact-form-container button:hover {
+    background-color:rgba(0, 0, 255, 0.7);
+  }
+
+  .contact-form-container img{
+    width: 100px;
+    display: block;
+  }
+  
+  /* Responsive Styles */
+
+@media screen and (max-width:884px) {
+  .ContactFormWrap{
+    padding: 200px 0px;
+  }
 }
 
-.BackButtonWrap button:hover{
-    transform: scale(1.1);
-}
-
-.BackButtonWrap button:active{
-    transform: scale(0.9);
-}
-
-
-@media screen and (max-width:1024px) {
-
-}
-
-@media screen and (max-width:768px) {
-   .ContactUsBody{
-    flex-direction: column-reverse;
-   }
-   .ContactUsBodyLeft{
-    width: 100%;
-    padding-left: 0;
-   }
-   .ContactUsBodyRight{
-    width: 100%;
-   }
-   .ContactUsHeader h1{
-    font-size: 2rem;
-}
-.ContactUsWrap{
-    padding-top: 100px;
-}
-}
-
-
-@media screen and (max-width:428px) {
-    .FormSubmitUi{
-        width: 90%;
-        font-size: 1.3rem;
+  @media (max-width: 600px) {
+    .contact-form-container {
+      padding: 10px;
+      padding-top: 50px;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      /* padding: 100px 0px; */
     }
-    .FormSubmitUi button{
-        font-size: 1.2rem;
+  
+  .contact-form-container button {
+      font-size: 14px;
     }
-}
+  }
 
-@media screen and (max-width:320px) {
+  @media screen and (max-width:428px) {
+    .ContactFormWrap{
+      padding: 20px 10px;
+    } 
+    .contact-form-container{
+      width: 100%;
+
+    }
+    .form-group input,
+  .form-group textarea {
+   width: 300px;
+  }
+    
+  }
+
+  @media screen and (max-width:360px) {
    
-}
-
-
-
+    .form-group input,
+  .form-group textarea {
+   width: 250px;
+  }
+    
+  }
+  
