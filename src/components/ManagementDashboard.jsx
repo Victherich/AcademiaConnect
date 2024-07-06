@@ -39,11 +39,7 @@ const ManagementDashboard = () => {
         <Link to="/" className="btn btn-danger ml-2" onClick={()=>setAdmin(false)}>LogOut</Link>
         {/* <Link to="/transportation" className="btn btn-info ml-2">Transportation & Pick-Up</Link> */}
       </div>
-      <div>
-        {/* Conditionally render CreateStudent component based on add state */}
-        {add === "single" && <CreateStudent type="single" />}
-        {add === "batch" && <CreateStudent type="batch" />}
-      </div>
+     
     </div>
   );
 };

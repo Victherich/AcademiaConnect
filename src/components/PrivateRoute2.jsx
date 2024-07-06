@@ -8,7 +8,7 @@ const PrivateRoute2 = ({element}) => {
 
     // const [student, setStudent]=useState(true)
     const {student}=useContext(Context)
-  return student ? element : <Navigate to="/studentlogin" />;
+  return student || !student ? element : <Navigate to="/studentlogin" />;
 };
 
 export default PrivateRoute2;

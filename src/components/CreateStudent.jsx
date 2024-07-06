@@ -88,7 +88,7 @@ const CreateStudent = () => {
     <div className="Style1">
       
       <h2>Create Student</h2>
-      <form className="Style2" onSubmit={handleSubmit}>
+      <form className="Style3" onSubmit={handleSubmit}>
         <div className="form-group">
           <input
             onChange={handleChange}

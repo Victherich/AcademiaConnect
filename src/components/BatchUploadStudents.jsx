@@ -48,10 +48,10 @@ const BatchUploadStudents = () => {
   };
 
   return (
-    <div className="Style1">
+    <div className="Style3">
       <ManagementDashboard />
       <h2>Batch Upload Students</h2>
-      <form className="Style2" onSubmit={handleSubmit}>
+      <form className="Style3" onSubmit={handleSubmit}>
         <div className="form-group">
           <input
             onChange={handleChange}

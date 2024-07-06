@@ -18,4 +18,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* align-items: center; */
+}
+
+.Style3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:center;
+
+}
+
+.Style3 button{
+    width: 80%;
 }
